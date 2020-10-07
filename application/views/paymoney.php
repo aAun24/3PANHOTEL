@@ -2,7 +2,7 @@
 session_start();
 if(empty($_SESSION['email'])){
   //echo "ว่าง";
-	echo"<meta http-equiv='refresh' content='0; URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project'>";
+	echo"<meta http-equiv='refresh' content='0; URL=<?= base_url();?>'>";
 }else{
 }
 

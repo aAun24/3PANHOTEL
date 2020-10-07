@@ -1,9 +1,9 @@
   <?php
 session_start();
 $host = "localhost";
-$username = "it57160284";
-$password = "it57160284";
-$database = "it57160284";
+$username = "root";
+$password = "";
+$database = "3panhotel";
 
 $conn = mysqli_connect($host,$username,$password,$database);
 $conn ->query("set names utf8");
@@ -43,7 +43,7 @@ if($conn ->connect_error){
 		//echo $sql;
 		$conn ->query($sql);
 		//echo"Picture success.";
-		echo"<meta http-equiv='refresh' content='0;URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Updategallery'>";
+		echo"<meta http-equiv='refresh' content='0;URL=<?= base_url();?>/index.php/welcome/Updategallery'>";
 	}else{
 		echo"Pic fail";
 	}

@@ -5,6 +5,6 @@ if(!isset($_SESSION)){
 session_unset();
 session_destroy();
 //$url=site_url();
-echo "<meta http-equiv='refresh' content='0; URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project'>";
+echo "<meta http-equiv='refresh' content='0; URL=http://localhost:4869/3PANHOTEL'>";
 
 ?>

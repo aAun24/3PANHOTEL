@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "it57160284";
-$password = "it57160284";
+$username = "root";
+$password = "";
 $dbname = "it57160284";
 mysql_query("SET NAMES utf8");
  

@@ -4,10 +4,19 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+@font-face {
+    font-family: 'GraphikTH';
+    src: url('../font/GraphikTH/GraphikTH-Regular.eot?#iefix') format('embedded-opentype'),
+           url('../font/GraphikTH/GraphikTH-Regular.woff') format('woff'),
+           url('../font/GraphikTH/GraphikTH-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body{
   margin:0;
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'GraphikTH'!important;
   background: #FFf;
   /*-webkit-filter: grayscale(100%);*/
 }
@@ -753,7 +762,7 @@ background: url(../images/img-sprite-hover.png) no-repeat -78px 0px;
     .services-bottom-grd-right h4 {
       color: #DF1E1C;
       font-size: 25px;
-      font-family: 'Alegreya-Regular';
+      font-family: 'GraphikTH';
       text-transform: capitalize;
       font-weight: 500;
     }

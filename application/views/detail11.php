@@ -35,16 +35,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- //for-mobile-apps -->
-		<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/flexslider.css" media="screen" />
+		<link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="<?= base_url();?>/dist/css/flexslider.css" media="screen" />
 		<!-- js -->
-		<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+		<script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
 		<!-- //js -->
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-		<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+		<script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+		<script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -61,19 +61,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<div class="header-nav">
 					<div class="logo">
-						<h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+						<h1><a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
 					</div>
 					<div class="navigation">
-						<span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/></span>
+						<span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/></span>
 						<nav class="cl-effect-11" id="cl-effect-11">
 							<ul class="nav1">
-								<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project" data-hover="HOME">HOME</a></li>
-								<!--<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
-								<li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
-								<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
-								<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
-								<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signinORup" data-hover="SIGNUP">SIGNUP</a></li>
-								<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signinORup" data-hover="SIGNIN">SIGNIN</a></li>
+								<li><a href="<?= base_url();?>" data-hover="HOME">HOME</a></li>
+								<!--<li><a href="<?= base_url();?>/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
+								<li><a class="active" href="<?= base_url();?>/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
+								<li><a href="<?= base_url();?>/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
+								<li><a href="<?= base_url();?>/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
+								<li><a href="<?= base_url();?>/index.php/welcome/signinORup" data-hover="SIGNUP">SIGNUP</a></li>
+								<li><a href="<?= base_url();?>/index.php/welcome/signinORup" data-hover="SIGNIN">SIGNIN</a></li>
 							</ul>                         
 						</nav>
 						<!-- script for menu -->
@@ -89,10 +89,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<!--<div class="social-icons">
 						<ul>
-							<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" class="f1"></a></li>
-							<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" class="f2"></a></li>
-							<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" class="f3"></a></li>
-							<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" class="f4"></a></li>
+							<li><a href="<?= base_url();?>/dist/#" class="f1"></a></li>
+							<li><a href="<?= base_url();?>/dist/#" class="f2"></a></li>
+							<li><a href="<?= base_url();?>/dist/#" class="f3"></a></li>
+							<li><a href="<?= base_url();?>/dist/#" class="f4"></a></li>
 						</ul>
 					</div>-->
 					<div class="clearfix"></div>
@@ -109,34 +109,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="flexslider">
 						<ul class="slides">
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu2.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu2.jpg" alt=""/ width="100px" height="50px">
+							<li data-thumb="<?= base_url();?>/dist/images/susu2.jpg">
+								<img src="<?= base_url();?>/dist/images/susu2.jpg" alt=""/ width="100px" height="50px">
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu1.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu1.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu1.jpg">
+								<img src="<?= base_url();?>/dist/images/susu1.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu3.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu3.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu3.jpg">
+								<img src="<?= base_url();?>/dist/images/susu3.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu4.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu4.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu4.jpg">
+								<img src="<?= base_url();?>/dist/images/susu4.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu5.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu5.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu5.jpg">
+								<img src="<?= base_url();?>/dist/images/susu5.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu7.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu7.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu7.jpg">
+								<img src="<?= base_url();?>/dist/images/susu7.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/superior1.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/superior1.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/superior1.jpg">
+								<img src="<?= base_url();?>/dist/images/superior1.jpg" alt=""/>
 							</li>
-							<li data-thumb="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu6.jpg">
-								<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu6.jpg" alt=""/>
+							<li data-thumb="<?= base_url();?>/dist/images/susu6.jpg">
+								<img src="<?= base_url();?>/dist/images/susu6.jpg" alt=""/>
 							</li>
 						</ul>
 					</div>
 					<!-- FlexSlider -->
-					<script defer src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery.flexslider.js"></script>
+					<script defer src="<?= base_url();?>/dist/js/jquery.flexslider.js"></script>
 					<script>
 						// Can also be used with $(document).ready()
 						$(window).load(function() {
@@ -164,9 +164,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<?php
 						$host = "localhost";
-						$username = "it57160284";
-						$password = "it57160284";
-						$database = "it57160284";
+						$username = "root";
+						$password = "";
+						$database = "3panhotel";
 						$conn = mysqli_connect($host,$username,$password,$database);
 						$conn -> query("SET NAMES UTF8");
 						$sql2 = "SELECT *  FROM Room_Hotel";
@@ -180,7 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						echo"<div class='sp-bor-btn text-right'>
 						<h4>$totalmoney BAHT</h4>
 						<BR>
-							<a class='best-btn' href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signinORup'>SIGNUP OR SIGNIN</a></div>";
+							<a class='best-btn' href='<?= base_url();?>/index.php/welcome/signinORup'>SIGNUP OR SIGNIN</a></div>";
 
 							?>
 						</div>
@@ -200,10 +200,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="spl-btn-bor" style="background-color:#CC9900">
 								<p>เลือกดูห้องพักชนิดอื่น</p>
 							</div>
-							<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11"><p>&nbsp;&nbsp;&nbsp;Superior</p></a>
-							<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail21"><p>&nbsp;&nbsp;&nbsp;Deluxe</p></a>
-							<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail31"><p>&nbsp;&nbsp;&nbsp;Suite</p></a>
-							<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail41"><p>&nbsp;&nbsp;&nbsp;Family</p></a>
+							<a href="<?= base_url();?>/index.php/welcome/detail11"><p>&nbsp;&nbsp;&nbsp;Superior</p></a>
+							<a href="<?= base_url();?>/index.php/welcome/detail21"><p>&nbsp;&nbsp;&nbsp;Deluxe</p></a>
+							<a href="<?= base_url();?>/index.php/welcome/detail31"><p>&nbsp;&nbsp;&nbsp;Suite</p></a>
+							<a href="<?= base_url();?>/index.php/welcome/detail41"><p>&nbsp;&nbsp;&nbsp;Family</p></a>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -216,10 +216,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 ftr_navi ftr">
 					<h3>NAVIGATION</h3>
 					<ul>
-						<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project" data-hover="HOME">HOME</a></li>
-						<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
-						<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
-						<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
+						<li><a href="<?= base_url();?>" data-hover="HOME">HOME</a></li>
+						<li><a href="<?= base_url();?>/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
+						<li><a href="<?= base_url();?>/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
+						<li><a href="<?= base_url();?>/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 ftr_navi ftr">
@@ -230,7 +230,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 				</div>
 				<div class="col-md-4 ftr-logo">
-					<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+					<a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
 				</div>
 				<div class="clearfix"> </div>
@@ -245,7 +245,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!-- //copy -->
 		<!-- for bootstrap working -->
-		<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+		<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 		<!-- //for bootstrap working -->
 		<!-- smooth scrolling -->
 		<script type="text/javascript">
@@ -261,7 +261,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
-	<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<a href="<?= base_url();?>/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
 </body>
 </html>

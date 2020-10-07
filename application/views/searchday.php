@@ -3,9 +3,9 @@
 header("Cache-Control: no-store, no-cache, must-revalidate");   
 header("Cache-Control: post-check=0, pre-check=0", false);  
 $host = "localhost";
-$username = "it57160284";
-$password = "it57160284";
-$database = "it57160284";
+$username = "root";
+$password = "";
+$database = "3panhotel";
 $conn = mysqli_connect($host,$username,$password,$database);
 $conn -> query("SET NAMES UTF8");
  							//$email = $_SESSION['email'];

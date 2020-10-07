@@ -12,7 +12,7 @@ if(empty($_SESSION['email'])){
         echo"<meta http-equiv='refresh' content='0;URL=viewPrice'>";
       }
       if($_SESSION['status']=='customer'){
-        echo "<meta http-equiv='refresh' content='0;URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/index2'>";
+        echo "<meta http-equiv='refresh' content='0;URL=<?= base_url();?>/index.php/welcome/index2'>";
       }
   
 }
@@ -35,16 +35,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
         <!-- //for-mobile-apps -->
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/chocolat.css" rel="stylesheet">
+        <link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?= base_url();?>/dist/css/chocolat.css" rel="stylesheet">
         <!-- js -->
-        <script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+        <script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
         <!-- //js -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <!-- start-smoth-scrolling -->
-        <script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-        <script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+        <script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+        <script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
         <script type="text/javascript">
             jQuery(document).ready(function($) {
                 $(".scroll").click(function(event){     
@@ -70,31 +70,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="container">
                 <div class="header-nav">
                     <div class="logo">
-                        <h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+                        <h1><a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
                     </div>
                     <div class="navigation">
-                        <span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/ style="width:30px;height:30px"></span>
+                        <span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/ style="width:30px;height:30px"></span>
                         <div class="row">
                             <div class="col-md-12">
                                 <nav class="cl-effect-11" id="cl-effect-11">
                                     <ul class="nav1">
-                                        <li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project" data-hover="HOME">HOME</a></li>
-                                        <!--<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signinORup?s=signup" data-hover="SIGNUP">SIGNUP</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signinORup?s=signin" data-hover="SIGNIN">SIGNIN</a></li>
+                                        <li><a class="active" href="<?= base_url();?>" data-hover="HOME">HOME</a></li>
+                                        <!--<li><a href="<?= base_url();?>/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
+                                        <li><a href="<?= base_url();?>/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/signinORup?s=signup" data-hover="SIGNUP">SIGNUP</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/signinORup?s=signin" data-hover="SIGNIN">SIGNIN</a></li>
                                     </ul>                         
                                 </nav>
                             </div>
                     <!--<nav class="cl-effect-11" id="cl-effect-11">
                         <ul class="nav1">
                             <div class="col-md-2">
-                                <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signup" data-hover="SIGNUP">SIGNUP</a></li>
+                                <li><a href="<?= base_url();?>/index.php/welcome/signup" data-hover="SIGNUP">SIGNUP</a></li>
                             </div>      
                             <div class="col-md-2">
-                                <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signin" data-hover="SINGIN">SIGNIN</a></li>
+                                <li><a href="<?= base_url();?>/index.php/welcome/signin" data-hover="SINGIN">SIGNIN</a></li>
                             </div>
                         </ul>                         
                     </nav>-->
@@ -122,7 +122,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="clearfix"></div>
                 </div>
                 <div class="banner-info">
-                    <script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/responsiveslides.min.js"></script>
+                    <script src="<?= base_url();?>/dist/js/responsiveslides.min.js"></script>
                     <script>
                                     // You can also use "$(window).load(function() {"
                                     $(function () {
@@ -185,7 +185,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <h3>Featured Hotel</h3>
                                     <div class="ban-pos-info l-grids">
                                         <figure class="effect-bubba">
-                                            <img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/4.jpg" alt=""/>
+                                            <img src="<?= base_url();?>/dist/images/4.jpg" alt=""/>
                                             <figcaption>
                                                 <h4>3PAN HOTEL</h4>
                                                 <p>In officiis debitis aut rerum tincidunt labore dolore magna</p>                                                              
@@ -198,7 +198,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <div class="ban-pos-gridtwo l-grids" style="width:100%">
                                             <div class="ban-pos-info l-grids">
                                                 <figure class="effect-bubba">
-                                                    <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu4.jpg" alt="Superior"/>
+                                                    <a href="<?= base_url();?>/index.php/welcome/detail11"><img src="<?= base_url();?>/dist/images/susu4.jpg" alt="Superior"/>
                                                         <figcaption>
                                                             <h1 style="font-size:38pt">Superior</h1>
 
@@ -212,7 +212,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <div class="ban-pos-gridtwo l-grids" style="width:100%">
                                             <div class="ban-pos-info l-grids">
                                                 <figure class="effect-bubba">
-                                                    <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail21"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/su1.jpg" alt="Deluxe"/>
+                                                    <a href="<?= base_url();?>/index.php/welcome/detail21"><img src="<?= base_url();?>/dist/images/su1.jpg" alt="Deluxe"/>
                                                         <figcaption>
                                                             <h1 style="font-size:42pt">Deluxe</h1>
 
@@ -226,7 +226,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <div class="ban-pos-gridtwo l-grids" style="width:100%">
                                             <div class="ban-pos-info l-grids">
                                                 <figure class="effect-bubba">
-                                                    <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail31"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/suite2.jpg" alt="Suite"/>
+                                                    <a href="<?= base_url();?>/index.php/welcome/detail31"><img src="<?= base_url();?>/dist/images/suite2.jpg" alt="Suite"/>
                                                         <figcaption>
                                                             <h1 style="font-size:42pt">Suite</h1>
 
@@ -240,7 +240,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <div class="ban-pos-gridtwo l-grids" style="width:100%;">
                                             <div class="ban-pos-info l-grids">
                                                 <figure class="effect-bubba">
-                                                    <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail41"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/family.jpg" alt="Family"/>
+                                                    <a href="<?= base_url();?>/index.php/welcome/detail41"><img src="<?= base_url();?>/dist/images/family.jpg" alt="Family"/>
                                                         <figcaption>
                                                             <h1 style=" font-size:42pt">Family</h1>
 
@@ -269,20 +269,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <h3 class="tittle">FACILITIES</h3>
                                     <div class="facilities-grids">
                                         <div class="col-md-6 facilities-grid">
-                                            <img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/6.jpg" alt="" />
+                                            <img src="<?= base_url();?>/dist/images/6.jpg" alt="" />
                                         </div>
                                         <div class="col-md-6 facilities-grid-left">
                                             <div class="fac-grids">
                                                 <div class="facilities-left">
-                                                    <img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/ddd.jpg" alt="" />
+                                                    <img src="<?= base_url();?>/dist/images/ddd.jpg" alt="" />
                                                 </div>
                                                 <div class="facilities-right">
-                                                    <img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/333.jpg" alt="" />
+                                                    <img src="<?= base_url();?>/dist/images/333.jpg" alt="" />
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                             <div class="fac-rig-btm">
-                                                <img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/444.jpg" alt="" />
+                                                <img src="<?= base_url();?>/dist/images/444.jpg" alt="" />
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -391,37 +391,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <div class="gallery-bottom">
                                     <?php  
                                         $host = "localhost";
-                                        $username = "it57160284";
-                                        $password = "it57160284";
-                                        $database = "it57160284";
+                                        $username = "root";
+                                        $password = "";
+                                        $database = "3panhotel";
                                         $conn = mysqli_connect($host,$username,$password,$database);
                                         $conn -> query("SET NAMES UTF8");
                                         $sql = "SELECT * FROM Gallery_Hotel";
                                         $result = $conn->query($sql);
                                         while($row = $result->fetch_object()){
-                                        echo "<div class='col-md-4 gal-grid'>
-                                              <div class='view view-fifth'>";
-                                        echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/gallery/";
-
-                                        echo $row->picture; 
-
-                                        echo"'class='b-link-stripe b-animate-go  thickbox'  title='Image Title'>";
-
-                                        echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/gallery/";
-                                       
-                                        echo $row->picture; 
-
-                                         
-                                        echo "'alt='' class='img-responsive' style='height:200px'>";
-
-                                        echo "<div class='mask'><h4>3PAN HOTEL</h4>";
-                                        echo "<p>".$row->name."</p>";
-                                        echo "<span>More</span></div></a></div></div>";
+                                        ?>
+                                        <div class='col-md-4 gal-grid'>
+                                            <div class='view view-fifth'>
+                                            <a href="<?= base_url(); echo '/dist/images/gallery/'.$row->picture;?>" class='b-link-stripe b-animate-go  thickbox'  title="<?=$row->name?>">
+                                            <img src="<?= base_url(); echo '/dist/images/gallery/'.$row->picture;?>" class="img-responsive" style="height:200px">
+                                            <div class='mask'><h4>3PAN HOTEL</h4>
+                                                <p><?=$row->name?></p>
+                                                <span>More</span>
+                                            </div>
+                                            </a>
+                                            </div>
+                                        </div>
+                                        <?php
                                         }
-                                    ?>
+                                        ?>
                                         <div class="clearfix"> </div>
                                     </div>
-                                    <script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery.chocolat.js"></script>
+                                    <script src="<?= base_url();?>/dist/js/jquery.chocolat.js"></script>
 
                                     <!--light-box-files -->
                                     <script type="text/javascript">
@@ -439,10 +434,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <div class="col-md-4 ftr_navi ftr">
                                         <h3>NAVIGATION</h3>
                                         <ul>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project" data-hover="HOME">HOME</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
+                                        <li><a href="<?= base_url();?>" data-hover="HOME">HOME</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/detail11" data-hover="ROOM">ROOM</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/about" data-hover="ABOUT">ABOUT</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/contact" data-hover="CONTACT">CONTACT</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-4 ftr_navi ftr">
@@ -453,7 +448,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         </ul>
                                     </div>
                                     <div class="col-md-4 ftr-logo">
-                                        <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+                                        <a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
                                     </div>
                                     <div class="clearfix"> </div>
@@ -468,7 +463,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                             <!-- //copy -->
                             <!-- for bootstrap working -->
-                            <script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+                            <script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
                             <!-- //for bootstrap working -->
                             <!-- smooth scrolling -->
                             <script type="text/javascript">
@@ -484,7 +479,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             $().UItoTop({ easingType: 'easeOutQuart' });
         });
     </script>
-    <a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <a href="<?= base_url();?>/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     <!-- //smooth scrolling -->
 </body>
 </html>

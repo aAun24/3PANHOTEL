@@ -2,7 +2,7 @@
 session_start();
 if(empty($_SESSION['email'])){
   //echo "ว่าง";
-	echo"<meta http-equiv='refresh' content='0; URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project'>";
+	echo"<meta http-equiv='refresh' content='0; URL=<?= base_url();?>'>";
 }else{
   //echo $_SESSION['firstname'];
   //echo "ไม่ว่าง";
@@ -26,16 +26,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 			function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<!-- //for-mobile-apps -->
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-			<link rel="stylesheet" type="text/css" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/jquery-ui1.css">
+			<link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" type="text/css" href="<?= base_url();?>/dist/css/jquery-ui1.css">
 			<!-- js -->
-			<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+			<script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
 			<!-- //js -->
 			<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 			<!-- start-smoth-scrolling -->
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
 			<script type="text/javascript">
 				jQuery(document).ready(function($) {
 					$(".scroll").click(function(event){		
@@ -80,15 +80,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="container">
 					<div class="header-nav">
 						<div class="logo">
-							<h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+							<h1><a href="<?= base_url();?>/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
 						</div>
 						<div class="navigation">
-							<span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/></span>
+							<span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/></span>
 							<nav class="cl-effect-11" id="cl-effect-11">
 								<ul class="nav1">
-									<li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project" data-hover="HOME">HOME</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail" data-hover="DETAIL">DETAIL ROOM</a></li>
+									<li><a class="active" href="<?= base_url();?>" data-hover="HOME">HOME</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/detail" data-hover="DETAIL">DETAIL ROOM</a></li>
 									<li><a>Profile</a></li>
 									<li><a>Sign Out</a></li>
 								</ul>
@@ -121,9 +121,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<!--<div style="background-color:#ECCA69">-->
 								<?php
 								$host = "localhost";
-								$username = "it57160284";
-								$password = "it57160284";
-								$database = "it57160284";
+								$username = "root";
+								$password = "";
+								$database = "3panhotel";
 								$conn = mysqli_connect($host,$username,$password,$database);
 								$conn -> query("SET NAMES UTF8");
  							//$email = $_SESSION['email'];
@@ -142,7 +142,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									echo "<h4>".$row->room."</h4>";
 									echo"<h3>แบบฟอร์มการจองห้องพัก</h3>";
 									echo"<BR>";
-									echo"<form action='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Book_insert' method='post'>";
+									echo"<form action='<?= base_url();?>/index.php/welcome/Book_insert' method='post'>";
 									echo"<h4>Check In</h4>";
 									echo"<input type='date' name='checkin' value='$row->checkin'>";
 
@@ -225,11 +225,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			echo "<div class='hotel-rooms'>";
 		echo "<div class='hotel-left'>";
 	//ทำลิ้งไปหน้ารายละเอียดเพิ่มเติม
-		echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/single.html'>";
+		echo "<a href='<?= base_url();?>/dist/single.html'>";
 		echo"<span class='glyphicon glyphicon-bed' aria-hidden='true'></span>".$row2->name."</a>";
 		echo "<div class='hotel-left-grids'>";
 		echo "<div class='hotel-left-one'>";
-		echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/26.jpg' alt='' />";
+		echo "<img src='<?= base_url();?>/dist/images/26.jpg' alt='' />";
 		echo "</div>";
 		echo "<div class='hotel-left-two'>";
 		echo "จำนวนผู้พักสูงสุด".$row2->num_people."คน";
@@ -298,8 +298,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	echo"<div class='hotel-left'>";
 	echo"<center>";
 	echo"<div class='hotel-left-grids'>";
-	echo"<h4 style='color:black'>ชำระเงิน คลิ๊กที่นี่&nbsp;<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Red_Arrow_Down.svg' alt='Click' height='20' width='20'></h4>";
-	echo"<Form method='post' action='https://www.paysbuy.com/paynow.aspx?lang=t'> <input type='Hidden' Name='psb' value='psb'/> <input Type='Hidden' Name='biz' value='57160284@go.buu.ac.th'/> <input Type='Hidden' Name='inv' value='HT-PS-00001'/> <input Type='Hidden' Name='itm' value='จองโรงแรม'/> <input Type='Hidden' Name='amt' value='2'/> <input Type='Hidden' Name='postURL' value='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/thankyou'/> <input type='image' src='https://www.paysbuy.com/imgs/paypalcredit.png' border='0' name='submit' alt='Make it easier,PaySbuy - it's fast,free and secure!'/> </Form >";
+	echo"<h4 style='color:black'>ชำระเงิน คลิ๊กที่นี่&nbsp;<img src='<?= base_url();?>/dist/images/Red_Arrow_Down.svg' alt='Click' height='20' width='20'></h4>";
+	echo"<Form method='post' action='https://www.paysbuy.com/paynow.aspx?lang=t'> <input type='Hidden' Name='psb' value='psb'/> <input Type='Hidden' Name='biz' value='57160284@go.buu.ac.th'/> <input Type='Hidden' Name='inv' value='HT-PS-00001'/> <input Type='Hidden' Name='itm' value='จองโรงแรม'/> <input Type='Hidden' Name='amt' value='2'/> <input Type='Hidden' Name='postURL' value='<?= base_url();?>/index.php/welcome/thankyou'/> <input type='image' src='https://www.paysbuy.com/imgs/paypalcredit.png' border='0' name='submit' alt='Make it easier,PaySbuy - it's fast,free and secure!'/> </Form >";
 
 	echo"<div class='clearfix'></div>";
 	echo"</div>";
@@ -330,10 +330,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="col-md-4 ftr_navi ftr">
 			<h3>NAVIGATION</h3>
 			<ul>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/index.html">HOME</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/about.html">ABOUT</a></li>					
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/booking.html">BOOKING</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/contact.html">CONTACT</a></li>
+				<li><a href="<?= base_url();?>/dist/index.html">HOME</a></li>
+				<li><a href="<?= base_url();?>/dist/about.html">ABOUT</a></li>					
+				<li><a href="<?= base_url();?>/dist/booking.html">BOOKING</a></li>
+				<li><a href="<?= base_url();?>/dist/contact.html">CONTACT</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 ftr_navi ftr">
@@ -344,7 +344,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 		</div>
 		<div class="col-md-4 ftr-logo">
-			<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+			<a href="<?= base_url();?>/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
 		</div>
 		<div class="clearfix"> </div>
@@ -359,7 +359,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //copy -->
 <!-- for bootstrap working -->
-<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- smooth scrolling -->
 <script type="text/javascript">
@@ -396,7 +396,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        //ajax1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
 
-	        xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/eiei",true);
+	        xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/eiei",true);
 	        xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	        xmlhttp1.send("room="+document.form1.room.value);
 	        //xmlhttp1.send();

@@ -1,4 +1,4 @@
-<form action='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Price_update' method='post'>
+<form action='<?= base_url();?>/index.php/welcome/Price_update' method='post'>
 <table class="table">
 			<thead>
 				<tr>
@@ -31,9 +31,9 @@ if(empty($_SESSION['email'])){
 
 		<?php
 		$host = "localhost";
-		$username = "it57160284";
-		$password = "it57160284";
-		$database = "it57160284";
+		$username = "root";
+		$password = "";
+		$database = "3panhotel";
 		$conn = mysqli_connect($host,$username,$password,$database);
 		$conn->query("SET NAMES UTF8");
  							//$email = $_SESSION['email'];

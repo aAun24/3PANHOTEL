@@ -2,12 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-	/*ประกาศจากเจ้าของ server กรุณาเรียงฟังก์ชันตามcommentด้วย 
-	  วางให้ถูกตำแหน่งเพื่อจะได้ไม่สับสน ตามอันดับก่อนหลัง
-	  ใครไม่ทำตามจะส่งไปเรียนมาตรฐาน php กับอาจารย์โจ้
-	  ตั้งชื่อให้มันสอดคล้องด้วย do ส่งค่าไปเช็ค view แสดงผล 
-	  			ด้วยความปรารถนาดีจาก จุฬาลักษณ์*/
-
 
 	//จัดการบัญชีผู้ใช้
 	public function signinORup()

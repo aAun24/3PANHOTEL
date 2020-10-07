@@ -36,16 +36,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 			function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<!-- //for-mobile-apps -->
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-			<link rel="stylesheet" type="text/css" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/jquery-ui1.css">
+			<link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" type="text/css" href="<?= base_url();?>/dist/css/jquery-ui1.css">
 			<!-- js -->
-			<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+			<script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
 			<!-- //js -->
 			<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 			<!-- start-smoth-scrolling -->
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
 			<script type="text/javascript">
 				jQuery(document).ready(function($) {
 					$(".scroll").click(function(event){		
@@ -89,20 +89,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="container">
 					<div class="header-nav">
 						<div class="logo">
-							<h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+							<h1><a href="<?= base_url();?>/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
 						</div>
 						<div class="navigation">
-							<span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/></span>
+							<span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/></span>
 							<nav class="cl-effect-11" id="cl-effect-11">
 								<ul class="nav1">
-									<li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/booking2" data-hover="HOME">HOME</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/booking2" data-hover="Booking">Booking</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
+									<li><a class="active" href="<?= base_url();?>/index.php/welcome/booking2" data-hover="HOME">HOME</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/booking2" data-hover="Booking">Booking</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
 									
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
-									 <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/profile" data-hover="PROFILE">PROFILE</a></li>
-									<li><a data-hover="SIGNOUT" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signout">SIGNOUT</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
+									 <li><a href="<?= base_url();?>/index.php/welcome/profile" data-hover="PROFILE">PROFILE</a></li>
+									<li><a data-hover="SIGNOUT" href="<?= base_url();?>/index.php/welcome/signout">SIGNOUT</a></li>
 								</ul>
 							</nav>
 							<!-- script for menu -->
@@ -133,9 +133,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<!--<div style="background-color:#ECCA69">-->
 								<?php
 								$host = "localhost";
-								$username = "it57160284";
-								$password = "it57160284";
-								$database = "it57160284";
+								$username = "root";
+								$password = "";
+								$database = "3panhotel";
 								$conn = mysqli_connect($host,$username,$password,$database);
 								$conn -> query("SET NAMES UTF8");
 
@@ -145,12 +145,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									echo "<div class='hotel-rooms'>";
 									echo "<div class='hotel-left'>";
 										//ทำลิ้งไปหน้ารายละเอียดเพิ่มเติม
-									echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/single.html'>";
+									echo "<a href='<?= base_url();?>/dist/single.html'>";
 									echo"<span class='glyphicon glyphicon-bed' aria-hidden='true'></span>".$row1->name."</a>";
 									echo "<div class='hotel-left-grids'>";
 									echo "<div class='hotel-left-one'>";
-									echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/susu4.jpg' alt='' width='300px'
-									height='200px' />";
+								?>
+
+									<img src='<?php echo base_url('/dist/images/susu4.jpg'); ?>' width='300px'
+									height='200px'>
+
+								<?php
 									echo "</div>";
 									echo "<div class='hotel-left-two'>";
 									echo "จำนวนผู้พักสูงสุด".$row1->num_people."คน";
@@ -218,12 +222,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								echo "<div class='hotel-rooms'>";
 								echo "<div class='hotel-left'>";
 										//ทำลิ้งไปหน้ารายละเอียดเพิ่มเติม
-								echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/single.html'>";
+								echo "<a href='<?= base_url();?>/dist/single.html'>";
 								echo"<span class='glyphicon glyphicon-bed' aria-hidden='true'></span>".$row2->name."</a>";
 								echo "<div class='hotel-left-grids'>";
 								echo "<div class='hotel-left-one'>";
-								echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Deluxe4.jpg' width='300px'
-								height='200px'  alt='' />";
+							?>
+
+									<img src='<?php echo base_url('/dist/images/Deluxe4.jpg'); ?>' width='300px'
+									height='200px'>
+
+							<?php
 								echo "</div>";
 								echo "<div class='hotel-left-two'>";
 								echo "จำนวนผู้พักสูงสุด".$row2->num_people."คน";
@@ -289,12 +297,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							echo "<div class='hotel-rooms'>";
 							echo "<div class='hotel-left'>";
 										//ทำลิ้งไปหน้ารายละเอียดเพิ่มเติม
-							echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/single.html'>";
+							echo "<a href='<?= base_url();?>/dist/single.html'>";
 							echo"<span class='glyphicon glyphicon-bed' aria-hidden='true'></span>".$row3->name."</a>";
 							echo "<div class='hotel-left-grids'>";
 							echo "<div class='hotel-left-one'>";
-							echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Suite1.jpg' width='300px'
-							height='200px'  alt='' />";
+						?>
+
+									<img src='<?php echo base_url('/dist/images/Suite1.jpg'); ?>' width='300px'
+									height='200px'>
+
+							<?php
 							echo "</div>";
 							echo "<div class='hotel-left-two'>";
 							echo "จำนวนผู้พักสูงสุด".$row3->num_people."คน";
@@ -361,12 +373,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						echo "<div class='hotel-rooms'>";
 						echo "<div class='hotel-left'>";
 										//ทำลิ้งไปหน้ารายละเอียดเพิ่มเติม
-						echo "<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/single.html'>";
+						echo "<a href='<?= base_url();?>/dist/single.html'>";
 						echo"<span class='glyphicon glyphicon-bed' aria-hidden='true'></span>".$row4->name."</a>";
 						echo "<div class='hotel-left-grids'>";
 						echo "<div class='hotel-left-one'>";
-						echo "<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/family6.jpg' width='300px'
-						height='200px'  alt='' />";
+					?>
+
+									<img src='<?php echo base_url('/dist/images/family6.jpg'); ?>' width='300px'
+									height='200px'>
+
+							<?php
 						echo "</div>";
 						echo "<div class='hotel-left-two'>";
 						echo "จำนวนผู้พักสูงสุด".$row4->num_people."คน";
@@ -430,10 +446,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				echo"<div class='hotel-left'>";
 				echo"<center>";
 				echo"<div class='hotel-left-grids'>";
-				//echo"<h4 style='color:black'>บันทึกการจอง คลิ๊กที่นี่&nbsp;<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Red_Arrow_Down.svg' alt='Click' height='20px' width='20px'></h4>";
+				//echo"<h4 style='color:black'>บันทึกการจอง คลิ๊กที่นี่&nbsp;<img src='/dist/images/Red_Arrow_Down.svg' alt='Click' height='20px' width='20px'></h4>";
 
-				//echo"<a href='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Book_insert'><input type='image' src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/book-now4.gif' width=280px border='0' name='book' alt='booking'/ id='submitBOOK'></a>";
-				echo"<input type='image' src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/book-now4.gif' width=280px border='0' name='book' alt='booking'/ id='submitBOOK'>";
+				//echo"<a href='/index.php/welcome/Book_insert'><input type='image' src='/dist/images/book-now4.gif' width=280px border='0' name='book' alt='booking'/ id='submitBOOK'></a>";
+				?>
+					<input type='image' src='<?php echo base_url('dist/images/book-now4.gif'); ?>' width=280px border='0' name='book' alt='booking'/ id='submitBOOK'>
+				<?php
 				echo"<div class='clearfix'></div>";
 				echo"</div>";
 				echo"</center>";
@@ -465,10 +483,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="col-md-4 ftr_navi ftr">
 			<h3>NAVIGATION</h3>
 			<ul>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/index2">HOME</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12">ROOM</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about2">ABOUT</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2">CONTACT</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/index2">HOME</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/detail12">ROOM</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/about2">ABOUT</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/contact2">CONTACT</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 ftr_navi ftr">
@@ -479,7 +497,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 		</div>
 		<div class="col-md-4 ftr-logo">
-			<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+			<a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
 		</div>
 		<div class="clearfix"> </div>
@@ -494,7 +512,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //copy -->
 <!-- for bootstrap working -->
-<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- smooth scrolling -->
 <script type="text/javascript">
@@ -510,9 +528,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
-	<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<a href="<?= base_url();?>/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+	<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- smooth scrolling -->
 	<script type="text/javascript">
@@ -549,7 +567,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        //ajax1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
 
-	       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/searchprice2",true);
+	       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/searchprice2",true);
 	       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	       xmlhttp1.send("room="+document.form4.room4.value+"&name_room="+document.form4.name_room4.value);
 	        //xmlhttp1.send();
@@ -575,7 +593,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        //ajax1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
 
-	       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/searchprice2",true);
+	       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/searchprice2",true);
 	       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	       xmlhttp1.send("room="+document.form3.room3.value+"&name_room="+document.form3.name_room3.value);
 	        //xmlhttp1.send();
@@ -601,7 +619,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        //ajax1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
 
-	       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/searchprice2",true);
+	       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/searchprice2",true);
 	       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	       xmlhttp1.send("room="+document.form2.room2.value+"&name_room="+document.form2.name_room2.value);
 	        //xmlhttp1.send();
@@ -627,7 +645,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        //ajax1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");   
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
 
-	       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/searchprice2",true);
+	       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/searchprice2",true);
 	       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	       xmlhttp1.send("room="+document.form1.room1.value+"&name_room="+document.form1.name_room1.value);
 	       // ajax1.send("name="+document.form1.name.value+"&email="+document.form1.email.value); 
@@ -648,7 +666,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        	document.getElementById("paymoney").innerHTML = xmlhttp1.responseText;
 
 	        }
-	       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/paymoney",true);
+	       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/paymoney",true);
 	       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	       xmlhttp1.send();
 
@@ -668,7 +686,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			  		alert(errorMessage);
 			  		event.preventDefault();
 			  	}else{
-			  		window.location = "http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Book_insert";
+			  		window.location = "<?= base_url();?>/index.php/welcome/Book_insert";
 			  	}
 					
 				});
@@ -686,7 +704,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		        }
 		        xmlhttp1.onreadystatechange = function(){
 		        }
-		       xmlhttp1.open("post","http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/paysbuy",true);
+		       xmlhttp1.open("post","<?= base_url();?>/index.php/welcome/paysbuy",true);
 		       xmlhttp1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		       xmlhttp1.send();
 	    }*/

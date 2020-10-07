@@ -3,16 +3,16 @@
 session_start();
 if(empty($_SESSION['email'])){
   //echo "ว่าง";
-	echo"<meta http-equiv='refresh' content='0; URL=http://angsila.cs.buu.ac.th/~57160284/887240/Project'>";
+	echo"<meta http-equiv='refresh' content='0; URL=<?= base_url();?>'>";
 }else{
   //echo "ไม่ว่าง";
 }
 ?>
 <?php
 			$host = "localhost";
-			$username = "it57160284";
-			$password = "it57160284";
-			$database = "it57160284";
+			$username = "root";
+			$password = "";
+			$database = "3panhotel";
 			$conn = mysqli_connect($host,$username,$password,$database);
 			$conn -> query("SET NAMES UTF8");
 			$year = $this->input->post('year');
@@ -28,7 +28,7 @@ if(empty($_SESSION['email'])){
 			$row3 = mysqli_num_rows($result3);
 			//echo $result3;
 			if($row3 <= 0){
-				echo "<center><h1><img width='250px' height='250px' src=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/sad3.jpg \">ขออภัย!ระบบไม่พบรายการขายในเดือนนี้</h1></center><BR>";
+				echo "<center><h1><img width='250px' height='250px' src=\"<?= base_url();?>/dist/images/sad3.jpg \">ขออภัย!ระบบไม่พบรายการขายในเดือนนี้</h1></center><BR>";
 			}else{
 		echo"<BR><BR>
 

@@ -7,9 +7,9 @@
 ini_set('display_errors', 1);
 error_reporting(~0);
 $host = "localhost";
-		$username = "it57160284";
-		$password = "it57160284";
-		$database = "it57160284";
+		$username = "root";
+		$password = "";
+		$database = "3panhotel";
 		$conn = mysqli_connect($host,$username,$password,$database);
 		$conn->query("SET NAMES UTF8");
  							//$email = $_SESSION['email'];

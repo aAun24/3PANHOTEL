@@ -11,16 +11,16 @@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
         <!-- //for-mobile-apps -->
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/chocolat.css" rel="stylesheet">
+        <link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?= base_url();?>/dist/css/chocolat.css" rel="stylesheet">
         <!-- js -->
-        <script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+        <script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
         <!-- //js -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <!-- start-smoth-scrolling -->
-        <script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-        <script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+        <script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+        <script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
     <style>
 @import "compass/css3";
 
@@ -220,9 +220,9 @@ input[type=submit] {
     </form><!--
     <?php
     $host = "localhost";
-    $username = "it57160284";
-    $password = "it57160284";
-    $database = "it57160284";
+    $username = "root";
+    $password = "";
+    $database = "3panhotel";
     $conn = mysqli_connect($host,$username,$password,$database);
     $conn -> query("SET NAMES UTF8");
     $firstname  = $_POST['firstname']; 

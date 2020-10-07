@@ -35,16 +35,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 			function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<!-- //for-mobile-apps -->
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-			<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
-			<link rel="stylesheet" type="text/css" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/jquery-ui1.css">
+			<link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" type="text/css" href="<?= base_url();?>/dist/css/jquery-ui1.css">
 			<!-- js -->
-			<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+			<script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
 			<!-- //js -->
 			<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 			<!-- start-smoth-scrolling -->
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-			<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+			<script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
 			<script type="text/javascript">
 				jQuery(document).ready(function($) {
 					$(".scroll").click(function(event){		
@@ -88,20 +88,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="container">
 					<div class="header-nav">
 						<div class="logo">
-							<h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+							<h1><a href="<?= base_url();?>/dist/index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
 						</div>
 						<div class="navigation">
-							<span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/></span>
+							<span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/></span>
 							<nav class="cl-effect-11" id="cl-effect-11">
 								<ul class="nav1">
-									<li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/booking2" data-hover="HOME">HOME</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/booking2" data-hover="Booking">Booking</a></li>
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
+									<li><a class="active" href="<?= base_url();?>/index.php/welcome/booking2" data-hover="HOME">HOME</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/booking2" data-hover="Booking">Booking</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
 									
-									<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
+									<li><a href="<?= base_url();?>/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
 									<li><a data-hover="PROFILE" href="">PROFILE</a></li>
-									<li><a data-hover="SIGNOUT" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signout">SIGNOUT</a></li>
+									<li><a data-hover="SIGNOUT" href="<?= base_url();?>/index.php/welcome/signout">SIGNOUT</a></li>
 								</ul>
 							</nav>
 							<!-- script for menu -->
@@ -132,9 +132,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<!--<div style="background-color:#ECCA69">-->
 								<?php
 								$host = "localhost";
-								$username = "it57160284";
-								$password = "it57160284";
-								$database = "it57160284";
+								$username = "root";
+								$password = "";
+								$database = "3panhotel";
 								$conn = mysqli_connect($host,$username,$password,$database);
 								$conn -> query("SET NAMES UTF8");
 
@@ -230,14 +230,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				//echo"</center>";
 				echo"</div>";
 				echo"<div class='hotel-right text-right'>";
-					echo"<h4 style='color:black'>ชำระเงิน คลิ๊กที่นี่&nbsp;<img src='http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Red_Arrow_Down.svg' alt='Click' height='20px' width='20px'></h4>";
-
+				echo"<h4 style='color:black'>ชำระเงิน คลิ๊กที่นี่&nbsp;";
+				?>
+					<img src='<?php echo base_url('dist/images/Red_Arrow_Down.svg'); ?>' alt='Click' height='20px' width='20px'>
+				<?php
 					/*$sql2 = "SELECT MAX(id) AS maxid FROM paymoney_hotel";
 					$result2 = $conn->query($sql2);
 					$row2 = $result2->fetch_assoc();
 					$last_id = $row2['maxid']+1;*/
 
-					echo"<Form method='post' action='https://www.paysbuy.com/paynow.aspx?lang=t'> <input type='Hidden' Name='psb' value='psb'/> <input Type='Hidden' Name='biz' value='57160284@go.buu.ac.th'/> <input Type='Hidden' Name='inv' value='HT-PS-$last_id'/> <input Type='Hidden' Name='itm' value='จองโรงแรม'/> <input Type='Hidden' Name='amt' value='1'/> <input Type='Hidden' Name='postURL' value='http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/Payment_insert'/> <input type='image' src='https://www.paysbuy.com/imgs/paypalcredit.png' border='0' name='submit' alt='Make it easier,PaySbuy - it's fast,free and secure!' width='180px' height='40px'/> </Form >";
+					echo"<Form method='post' action='https://www.paysbuy.com/paynow.aspx?lang=t'> <input type='Hidden' Name='psb' value='psb'/> <input Type='Hidden' Name='biz' value='57160284@go.buu.ac.th'/> <input Type='Hidden' Name='inv' value='HT-PS-$last_id'/> <input Type='Hidden' Name='itm' value='จองโรงแรม'/> <input Type='Hidden' Name='amt' value='1'/> <input Type='Hidden' Name='postURL' value='<?= base_url();?>/index.php/welcome/Payment_insert'/> <input type='image' src='https://cdn.marketingoops.com/wp-content/uploads/2017/08/White.png' border='0' name='submit' alt='Make it easier,PaySbuy - it's fast,free and secure!' width='100%' height='auto'/> </Form >";
 					echo"<BR><center><h5>กรุณาชำระเงินภายใน 3 วัน <BR>มิฉะนั้นจะถูกยกเลิกการจอง
 						 <BR>หากคุณมีเหตุผลต้องจ่ายล่าช้า <BR>ติดต่อมาที่ 089-999-9999</h5></center>";
 				echo"</div>";//close right
@@ -260,10 +262,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="col-md-4 ftr_navi ftr">
 			<h3>NAVIGATION</h3>
 			<ul>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project">HOME</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12">ROOM</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about2">ABOUT</a></li>
-				<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2">CONTACT</a></li>
+				<li><a href="<?= base_url();?>">HOME</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/detail12">ROOM</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/about2">ABOUT</a></li>
+				<li><a href="<?= base_url();?>/index.php/welcome/contact2">CONTACT</a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 ftr_navi ftr">
@@ -274,7 +276,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 		</div>
 		<div class="col-md-4 ftr-logo">
-			<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+			<a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
 		</div>
 		<div class="clearfix"> </div>
@@ -289,7 +291,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //copy -->
 <!-- for bootstrap working -->
-<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- smooth scrolling -->
 <script type="text/javascript">
@@ -305,9 +307,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
-	<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<a href="<?= base_url();?>/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
-	<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+	<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- smooth scrolling -->
 </body>

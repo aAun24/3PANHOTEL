@@ -62,9 +62,9 @@ ob_start();
 	<?php
 				$id = $_GET["id"];
 				$host = "localhost";
-				$username = "it57160284";
-				$password = "it57160284";
-				$database = "it57160284";
+				$username = "root";
+				$password = "";
+				$database = "3panhotel";
 				$conn = mysqli_connect($host,$username,$password,$database);
 				$conn->query("SET NAMES UTF8");
 				$sql1 = "SELECT * FROM Book_Hotel, SignUp_Hotel
@@ -99,14 +99,14 @@ ob_start();
 				if ($row=$result->fetch_object()) {
 					echo"<table width=\"800\" border=\"0\" align=\"center\" cellpadding=\"8\" cellspacing=\"0\">
 						<tr style=\"background-color:lavender;\">
-							<td style=\"\"><img src=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/3PAN.png\" height=\"60px\"></td>
+							<td style=\"\"><img src=\"<?= base_url();?>/dist/images/3PAN.png\" height=\"60px\"></td>
 							<td colspan=\"6\" style=\"font-size:18pt;\" align=\"right\">เลขที่ใบจองห้องพัก : HT-PS-000$id</td>
 						</tr>
 						<tr style=\"background-color:lavenderblush;\">
 							<td style=\"font-size:12pt;\">ชื่อผู้เข้าพัก</td>
 							<td style=\"font-size:12pt;\">$row->firstname</td>			
 							<td style=\"font-size:12pt;\" rowspan=\"7\">
-							<center><img src=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/signaun.png\"><BR><BR>
+							<center><img src=\"<?= base_url();?>/dist/images/signaun.png\"><BR><BR>
 							(จุฬาลักษณ์  วทนะรัตน์)<BR>
 							ผู้จัดการ</center>
 							</td>

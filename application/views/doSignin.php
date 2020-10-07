@@ -2,9 +2,9 @@
 <?php
 session_start();
 $host = "localhost";
-$username = "it57160284";
-$password = "it57160284";
-$database = "it57160284";
+$username = "root";
+$password = "";
+$database = "3panhotel";
 
 $conn = mysqli_connect($host,$username,$password,$database);
 $conn->query("set names utf8");

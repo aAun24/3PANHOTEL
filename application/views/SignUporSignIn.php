@@ -206,16 +206,30 @@ if(preg_match('/android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|ie
 	echo"<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>";
 	echo"<div class ='form' style='background: rgba(19, 35, 47, 0.9);
 	padding: 40px;width: 800px;margin: 40px auto;border-radius: 4px;box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);'>";
-	echo "<a href=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project\"><img src=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Delete-icon.png\" width=\"50px\" height=\"50px\" style=\"margin-left:670px\"></a>";
+	?>
+
+	<a href="<?= base_url();?>">
+		<img src="<?= base_url();?> echo '/dist/images/Delete-icon.png'" width="50px" height="50px" 
+		style="margin-left:670px">
+	</a>
+
+	<?php
 }
 else
 {
      // ทำการเขียนโปรแกรมต่อที่นี่ กรณีเป็นการดูเว็บเพจจากคอมพิวเตอร์
      // header('Location: http://www.codetukyang.com'); // ใส่ URL ของหน้าที่ต้องการให้ไป กรณีเป็นการดูจากคอมพิวเตอร์
-	echo "<body background=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/banner5.jpg\">";
+	echo "<body background=\"<?= base_url();?>/dist/images/banner5.jpg\">";
 	echo"<div class='form' style='background: rgba(19, 35, 47, 0.9);
 	padding: 40px;width: 500px;height:600px;margin: 40px auto;border-radius: 4px;box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);'>"; 
-	echo "<a href=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project\"><img src=\"http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/Delete-icon.png\" width=\"30px\" height=\"30px\" style=\"margin-left:400px\"></a>";
+	?>
+	<a href="<?= base_url();?>">
+
+		<img src="<?= base_url(); echo '/dist/images/Delete-icon.png'?>" width="30px" height="30px" 
+		style="margin-left:400px">
+	</a>
+
+	<?php
 }
 
 ?>
@@ -239,7 +253,7 @@ else
 	<div id="signup">   
 		<h1>Register a new membership</h1>
 
-		<form action="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/SignUp_insert" method="post" name="signUp">
+		<form action="<?= base_url();?>/index.php/welcome/SignUp_insert" method="post" name="signUp">
 			<input type="hidden" name="status" value="customer">
 			<input type="hidden" name="phone" value="-">
 			<input type="hidden" name="address" value="-">
@@ -288,7 +302,7 @@ else
 	<div id="signin">   
 		<h1>Welcome Back!</h1>
 
-		<form action="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/form_doSignin" method="post" name="SignIn" id="SignIn">
+		<form action="<?= base_url();?>/index.php/welcome/form_doSignin" method="post" name="SignIn" id="SignIn">
 			<div class="field-wrap">
 				<label>
 					Email Address<span class="email">*</span>
@@ -393,7 +407,7 @@ if($_GET['s']=="signup"){
 	function check_email($email){
 		var request = $.ajax({
  
-		url: "http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/checkemail",
+		url: "<?= base_url();?>/index.php/welcome/checkemail",
 		 
 		type: "POST",
 		 

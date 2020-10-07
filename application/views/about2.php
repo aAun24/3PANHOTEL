@@ -36,15 +36,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?= base_url();?>/dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?= base_url();?>/dist/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/jquery-1.11.1.min.js"></script>
+<script src="<?= base_url();?>/dist/js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/move-top.js"></script>
-		<script type="text/javascript" src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/easing.js"></script>
+		<script type="text/javascript" src="<?= base_url();?>/dist/js/move-top.js"></script>
+		<script type="text/javascript" src="<?= base_url();?>/dist/js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -61,20 +61,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="header-nav">
 			<div class="logo">
-				<h1><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
+				<h1><a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a></h1>
 			</div>
 			<div class="navigation">
-				<span class="menu"><img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/menu.png" alt=""/></span>
+				<span class="menu"><img src="<?= base_url();?>/dist/images/menu.png" alt=""/></span>
 				<nav class="cl-effect-11" id="cl-effect-11">
 							<ul class="nav1">
-								<li><a class="active" href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/index2" data-hover="HOME">HOME</a></li>
-                                        <!--<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/booking2" data-hover="BOOKING">BOOKING</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/profile" data-hover="PROFILE">PROFILE</a></li>
-                                        <li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/signout" data-hover="SIGNOUT">SIGNOUT</a></li>
+								<li><a class="active" href="<?= base_url();?>/index.php/welcome/index2" data-hover="HOME">HOME</a></li>
+                                        <!--<li><a href="<?= base_url();?>/index.php/welcome/form_searchRoom" data-hover="BOOKING">BOOKING</a></li>-->
+                                        <li><a href="<?= base_url();?>/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/booking2" data-hover="BOOKING">BOOKING</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/file_order_list2" data-hover="FILE">FILE</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/contact2" data-hover="CONTACT">CONTACT</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/profile" data-hover="PROFILE">PROFILE</a></li>
+                                        <li><a href="<?= base_url();?>/index.php/welcome/signout" data-hover="SIGNOUT">SIGNOUT</a></li>
 							</ul>
 						</nav>
 				<!-- script for menu -->
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h2 class="tittle-one">ABOUT</h2>
 			</div>
 			<div class="about-bottom text-center">
-				<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/IT.jpg" alt="IT" />
+				<img src="<?= base_url();?>/dist/images/IT.jpg" alt="IT" />
 				<h4>สร้างอารยะบัณฑิต มุ่งแนวคิดสากล นำพาสังคมอย่างยั่งยืน ด้วยวิทยาการสารสนเทศ</h4>
 				<p>คณะวิทยาการสารสนเทศ 169 ถนนลงหาดบางแสน ต.แสนสุข อ.เมือง จ.ชลบุรี 20131</p>
 						<p>informatics@buu.ac.th   038-103060</p>
@@ -122,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="vision-bottom">
 				<div class="col-md-8 vision-left">
 					<div class="col-md-5 vsn-left">
-						<img src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/images/view.jpg" alt="" />
+						<img src="<?= base_url();?>/dist/images/view.jpg" alt="" />
 					</div>
 					<div class="col-md-7 vsn-right">
 						<h4>คณะวิทยาการสารสนเทศ</h4>
@@ -224,10 +224,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-md-4 ftr_navi ftr">
 										<h3>NAVIGATION</h3>
 										<ul>
-											<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project">HOME</a></li>
-											<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
-											<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/about2">ABOUT</a></li>
-											<li><a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/index.php/welcome/contact2">CONTACT</a></li>
+											<li><a href="<?= base_url();?>">HOME</a></li>
+											<li><a href="<?= base_url();?>/index.php/welcome/detail12" data-hover="ROOM">ROOM</a></li>
+											<li><a href="<?= base_url();?>/index.php/welcome/about2">ABOUT</a></li>
+											<li><a href="<?= base_url();?>/index.php/welcome/contact2">CONTACT</a></li>
 										</ul>
 									</div>
 									<div class="col-md-4 ftr_navi ftr">
@@ -238,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</div>
 									<div class="col-md-4 ftr-logo">
-										<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
+										<a href="<?= base_url();?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>3PAN HOTEL</a>
 
 									</div>
 									<div class="clearfix"> </div>
@@ -253,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<!-- //copy -->
 							<!-- for bootstrap working -->
-							<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/bootstrap.js"></script>
+							<script src="<?= base_url();?>/dist/js/bootstrap.js"></script>
 							<!-- //for bootstrap working -->
 							<!-- smooth scrolling -->
 							<script type="text/javascript">
@@ -269,7 +269,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
-	<a href="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<a href="<?= base_url();?>/dist/#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- //smooth scrolling -->
 </body>
 </html>

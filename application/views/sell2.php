@@ -162,7 +162,7 @@
 			chart.render();
 		}
 	</script>
-	<script src="http://angsila.cs.buu.ac.th/~57160284/887240/Project/dist/js/canvasjs.min.js"></script>
+	<script src="<?= base_url();?>/dist/js/canvasjs.min.js"></script>
 	<title>3PAN HOTEL</title>
 </head>
 
